@@ -1,0 +1,278 @@
+.container {
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+
+
+
+    .top {
+        background-color: rgb(255 255 255 / 50%);
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 40px;
+        height: 50px;
+        position:relative;
+
+        p {
+            font-size: 14px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .span1 {
+
+            font-size: 16px;
+            font-weight: bold;
+            padding: 0;
+        }
+
+        .logo1 {
+            border-radius: 50%;
+            right:95.5%;
+            height: 24px;
+            width: 24px;
+            background-image: url("/assets/images/chatpd.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+        }
+
+        .logo2 {
+            
+            border-radius: 50%;
+            height: 24px;
+            width: 24px;
+            background-image: url("/assets/images/logo2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        .head{
+            color:#1677ff;
+        }
+    }
+
+    //----------------------------------------------------------top
+    header {
+        display: flex;
+        flex-direction: column; 
+      align-items: center;
+      margin-bottom: 50px;
+
+        .h1 {
+            font-weight: 550;
+            font-size: 45px;
+            // text-align: center;
+            margin-bottom:12px;
+        }
+
+        .h3 {
+             font-size:20px;    
+             margin: 0;
+            padding: 0; 
+             color: rgba(0, 0, 0, 0.45);
+            max-width: 600px;
+        }
+    }
+//-----------------------------------------header
+
+.drag{
+       max-width: 993px;
+        margin: 0 auto; 
+       border-radius:12px;
+    //    display: flex;
+    //    align-items: center;
+    //    justify-content: center;  
+       
+    .card{
+   
+        background-color:white; 
+        padding:8px;
+        border-radius: 16px;
+
+        .card1{
+            position: relative; 
+            border-radius: 16px;
+            border:1px dashed;
+            transition: border-color 0.3s;
+
+          
+            .input{
+                position: absolute;
+                top:69%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                font-size: 16px;
+            }
+            .mysvg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height: 55px;
+                width: 55px;
+                fill: #1677ff;
+
+          .card1:hover{
+           border-color: #1677ff;
+          }  
+        }
+    }
+
+   
+       .other{
+         margin: 0 10px;
+         border-radius: 8px;
+         display: flex;
+         justify-content: space-between;
+         color: #1677ff;
+         text-decoration: none;
+         padding:0 6px 6px 6px;
+         
+         .browser a{
+            font-size: 12px;
+           color:#1677ff;
+            text-decoration:none;
+            background-color: transparent;     
+            cursor: pointer;
+         }
+         .browser a:hover{
+            color:rgb(61, 61, 221);
+         }
+        
+       }      
+    
+    }
+}
+
+//-----------------------------------------------------------------popup
+.top{
+    .h5{
+       margin-bottom: 0.5rem;
+        color: rgba(0, 0, 0, 0.88);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .top1
+    {
+        display: flex;
+       justify-content:center;
+       align-items: center;
+       margin:20px 0;
+       padding:0;
+   .popclose{
+       width:22px;
+       height: 22px;
+        background: transparent;
+        color: rgba(0, 0, 0, 0.45);
+        border-radius: 4px;
+        transition: 0.3s;
+        margin-left:120px;
+        border:none;
+        top:17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          
+       .popbox{   
+       font-size: 16px;
+       display: flex;
+       justify-content: center;
+       
+       .popclose:hover{
+        background-color:red !important;
+    }
+        
+       }
+    }  
+}   
+    
+    .text1{
+        margin-bottom: 16px;
+        text-align:left;
+        font-size: 14px;
+        margin: 15px;
+        color: rgba(0, 0, 0, 0.88);
+    }
+    .text2{
+        margin-bottom: 16px;
+        text-align:left;
+        font-size: 14px;
+        margin: 15px;
+        color: rgba(0, 0, 0, 0.45); 
+    }
+   .bottom{ 
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:8px;
+    width: 472px;
+    height:32px;
+    padding: 20px 24px;
+    
+   
+    img{
+        width: 18px;
+         height: 18px;
+          border-radius: 50%;
+           border: 1px solid rgb(204, 204, 204);
+    }
+    .bot1{
+        background-color:#ffffff;
+        border:1px solid #d9d9d9;
+        display: flex;
+        align-items: center;
+        height:32px;
+        width:165px;
+         gap: 4px;
+        justify-content: center;
+        font-size: 14px;
+        padding: 4px 15px;
+        border-radius: 6px; 
+        transition: .6s;
+    }
+
+    .bot2{
+        background-color:white;
+        border:1px solid #d9d9d9;
+        display: flex;
+        align-items: center;
+        height:32px;
+        width:165px;
+       gap: 4px;
+       border-radius:8px;
+       justify-content: center;
+       transition: .6s;
+  
+    }
+    .bot1:hover{
+        color: #1677ff;
+        border-color: #1677ff !important;
+    }
+    .bot2:hover{
+        color: #1677ff;
+        border-color: #1677ff !important;
+    }
+}
+}
+}
+
+
+
+
