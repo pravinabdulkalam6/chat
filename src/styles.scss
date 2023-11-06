@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;    
+    margin: 0px;
+    padding: 0px;
+    font-family: "-apple-system", system-ui, "Segoe UI", 'Roboto', Helvetica, Arial, sans-serif; 
+}
+body {
+  background-image:url('https://www.chatpdf.com/bg.avif') ;
+background-repeat: no-repeat;
+background-size: 100% 100%; 
+background-attachment: fixed;
+}
+.infoBtn{
+    .p-button{
+            width: 16px;
+            height: 16px;
+            padding: 0;
+            border-radius: 50%;
+            margin-left:3px;
+            margin-bottom: 2px;
+            align-items: center;
+          
+            .pi-info{
+                font-size: 8px;
+            }
+    }
+}
+.infotxt
+{
+    .p-dialog{
+       
+        
+        background-color: #ffffff;
+     
+        border: 0;
+        border-radius:18px;
+        // pointer-events: auto;
+        padding:0;
+    }
+    .p-dialog-header{
+  display: none;  
+ margin: 0;
+ padding: 0;
+ border-radius: 8px;
+ font-size:5px !important;
+ text-decoration: none;
+  
+    .p-dialog{
+    .p-dialog-content{
+    width:100px !important ;
+    height:100px !important ;
+    background-color: aqua !important;
+ }
+}
+}
+}
+
+.filemg{
+    .p-fileupload{
+      opacity: 0.7;
+        border: none !important;
+        .p-button{
+            width: 975px !important;
+            height: 182px !important;
+            background-color:rgba(0, 0, 0, 0.02);
+            padding:16px 0 !important;
+            border: none !important;
+           
+                  
+            cursor: pointer;
+            text-decoration: none !important;
+           
+            
+        }
+    }
+}
+   
+   
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "-apple-system", system-ui, "Segoe UI", 'Roboto', Helvetica, Arial, sans-serif; 
+}
+/* Common styles for all screen sizes */
+.translate {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url('https://www.chatpdf.com/bg.avif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+  
+  /* Tablet styles (up to 768px) */
+  @media (max-width: 768px) {
+    .translate {
+      padding: 20px;
+    }
+    h2 {
+      font-size: 1.3em;
+    }
+    .blocks {
+      display: block;
+      padding-left: 0;
+    }
+    .row {
+      width: 100%;
+      display: block;
+    }
+    .imagediv,
+    .box {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Mobile styles (up to 480px) */
+  @media (max-width: 480px) {
+    .translate {
+      padding: 10px;
+    }
+    h2 {
+      font-size: 1em;
+    }
+    .blocks {
+      padding: 0;
+    }
+    .row {
+      width: 100%;
+      display: block;
+    }
+    .imagediv,
+    .box {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .card{   .card1:hover{
+  
+        border-color:blue !important;
+        opacity: 1;
+    }
+}
+ 
