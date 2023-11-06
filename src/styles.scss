@@ -1,9 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 *{
+  box-sizing: border-box;    
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
     font-family: "-apple-system", system-ui, "Segoe UI", 'Roboto', Helvetica, Arial, sans-serif; 
+}
+body {
+  background-image:url('https://www.chatpdf.com/bg.avif') ;
+background-repeat: no-repeat;
+background-size: 100% 100%; 
+background-attachment: fixed;
 }
 .infoBtn{
     .p-button{

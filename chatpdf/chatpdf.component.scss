@@ -45,7 +45,7 @@
     .card1 {
         width: 323px;
         height: 169px;
-        background-color: antiquewhite;
+        background-color: white;
         border-radius: 8px;
         margin-right: 12px;
         margin-bottom: 12px;
@@ -65,25 +65,32 @@
 
         
     }
+    .lowerbox {
+        margin-bottom: 16px;
+    }
+   
              h2
             {
                 font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
                 margin-left: 5px;
                 font-size: 1.2em;
-                font-weight: bold;            
+                font-weight: bold;   
+                margin-top: 3px;         
             }
             p
             {
                 font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
                 font-size: 10px;
                 font-size: 14px;
+                line-height: 23px;
 
             }
 }
 
 .fordiv
 {
-    background-color:antiquewhite;
+    background-color: white;
+    // background-color:antiquewhite;
     height: 145px;
     width: 321px;
     padding: 24px;
