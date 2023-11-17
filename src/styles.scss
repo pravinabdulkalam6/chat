@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
 *{
   box-sizing: border-box;    
     margin: 0px;
@@ -70,8 +73,6 @@ background-attachment: fixed;
                   
             cursor: pointer;
             text-decoration: none !important;
-           
-            
         }
     }
 }
@@ -146,4 +147,108 @@ background-attachment: fixed;
         opacity: 1;
     }
 }
+ // bharath's css for mainchatpdf.html
+ .split{
+  width: 86%;
+  // margin: 0;
+  // padding: 0;
+  height: 100%;
+  .p-splitter-panel:nth-child(1) {
+      min-width: 450px; /* Set your desired minimum width */
+      max-width: 1050px;
+  }
  
+ 
+}
+.upbttn{
+  background: none;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .p-button{
+      height: 60px;
+      width: 13vw;
+        padding: 10px;
+      background-color: rgba(255,255,255,0.25);
+      border: 1px dashed white;
+      
+      .p-button-label[data-pc-section="label"]::before {
+          content: '\A'; 
+          white-space: pre; 
+          display: block; 
+          
+      }
+      .ng-star-inserted{
+        text-align: center;
+      }
+      
+      
+      .p-button-label[data-pc-section="label"]::before {
+          content: 'New Chat';
+          color: rgb(255, 255, 255);
+          font-size: 14px;
+          font-weight: lighter;
+          
+
+      }
+      
+      .p-button-label[data-pc-section="label"]:after {
+          content: 'Drop PDF here';
+          color: rgb(158, 158, 158); 
+          font-size: 14px;
+          font-weight: lighter;
+      }
+     
+  }
+  .p-button:hover{
+      border: 1px dashed rgb(0, 153, 255);
+  }
+}
+#pageNumber{
+
+ input{
+  border: 1px solid  rgb(238, 238, 238);
+  border-radius: 5px;
+  width: 50px ;
+  height: 26px ;
+  font-size: 14px ;
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+ }     
+ input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}     
+input:focus{
+  border: 1px solid #4096ff;
+}      
+}
+#zoomOut{
+  background-color: transparent;
+  border: none;
+  svg {
+      color: #939292;
+      size: 20px;
+  }
+
+  svg:hover {
+      color: #019df8;
+  }
+}
+
+#zoomIn{
+  background-color: transparent;
+  border: none;
+  
+  svg {
+      color: #939292;
+      size: 20px;
+  }
+
+  svg:hover {
+      color: #019df8;
+  }
+}

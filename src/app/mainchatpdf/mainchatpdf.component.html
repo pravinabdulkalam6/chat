@@ -1,0 +1,308 @@
+<div class="content_holder col-12">
+    <div class="side">
+      <div class="upbttn flex justify-content-center">
+        <p-toast></p-toast>
+        <p-fileUpload
+          accept=".pdf"
+          mode="basic"
+          name="demo[]"
+          url="https://www.primefaces.org/cdn/api/upload.php"
+          (onUpload)="onUpload($event)"
+          [auto]="true"
+          chooseLabel=" "
+        ></p-fileUpload>
+      </div>
+      <div class="feedback">
+        <div class="sider-button">Upgrade to Plus</div>
+        <div class="sider-button">Feedback</div>
+      </div>
+      <div class="file_list">
+        <ul *ngFor="let emp of fileObjects">
+          <li>
+            <a  (click)="display(emp.fileName, emp.fileUrl)">
+              <span>
+                <svg
+                  viewBox="64 64 896 896"
+                  focusable="false"
+                  data-icon="message"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M464 512a48 48 0 1096 0 48 48 0 10-96 0zm200 0a48 48 0 1096 0 48 48 0 10-96 0zm-400 0a48 48 0 1096 0 48 48 0 10-96 0zm661.2-173.6c-22.6-53.7-55-101.9-96.3-143.3a444.35 444.35 0 00-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.35 445.35 0 00-142 96.5c-40.9 41.3-73 89.3-95.2 142.8-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 00112 714v152a46 46 0 0046 46h152.1A449.4 449.4 0 00510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.48 444.48 0 00142.8-95.2c41.3-40.9 73.8-88.7 96.5-142 23.6-55.2 35.6-113.9 35.9-174.5.3-60.9-11.5-120-34.8-175.6zm-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8 69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9 44.6 18.7 84.6 45.6 119 80 34.3 34.3 61.3 74.4 80 119 19.4 46.2 29.1 95.2 28.9 145.8-.6 99.6-39.7 192.9-110.1 262.7z"
+                  ></path>
+                </svg>
+              </span>
+              {{ emp.fileName }}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <div class="sign_in">
+          <div class="sign_content">
+            <div><a href="">Sign in</a> to save your chat history</div>
+          </div>
+        </div>
+        <div class="sider-footer">
+          <a>Home</a>
+          <a>Account</a>
+          <a href="">API</a>
+          <a>FAQ</a>
+          <a href="" target="_blank">
+            <span role="img" aria-label="twitter" class="anticon anticon-twitter">
+              <svg
+                viewBox="64 64 896 896"
+                focusable="false"
+                data-icon="twitter"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0075-94 336.64 336.64 0 01-108.2 41.2A170.1 170.1 0 00672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 00-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 01-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 01-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a href="" target="_blank">
+            <svg
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16.5"
+              height="14"
+              viewBox="0 0 127.14 96.36"
+            >
+              <path
+                d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="split">
+      <p-splitter [style]="{ height: '100vh' }" styleClass="mb-5">
+        <ng-template pTemplate>
+          <div class="col flex align-items-center justify-content-center  tool_flex ">
+            <div class="pdf_display container">
+              <div class="toolbar">
+                <div class="file_name">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 16 16"
+                    class="icon-button"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="flex-shrink: 0; font-size: 22px; padding-top: 2px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2 1L1 2V14L2 15H14L15 14V2L14 1H2ZM14 14H7V2H14V14Z"
+                    ></path>
+                  </svg>
+                  <h1>{{ fileName }}</h1>
+                </div>
+                <div class="view_contorls">
+                  <pdf-zoom-out id="zoomOut"> </pdf-zoom-out>
+                  <button id="zoomRest" (click)="zooReset = '75%'">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      class="icon-button"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="
+                        font-size: 14px;
+                        user-select: none;
+                        margin-left: 3px;
+                        margin-right: 3px;
+                        flex-shrink: 0;
+                      "
+                    >
+                      <path
+                        d="M255.545 8c-66.269.119-126.438 26.233-170.86 68.685L48.971 40.971C33.851 25.851 8 36.559 8 57.941V192c0 13.255 10.745 24 24 24h134.059c21.382 0 32.09-25.851 16.971-40.971l-41.75-41.75c30.864-28.899 70.801-44.907 113.23-45.273 92.398-.798 170.283 73.977 169.484 169.442C423.236 348.009 349.816 424 256 424c-41.127 0-79.997-14.678-110.63-41.556-4.743-4.161-11.906-3.908-16.368.553L89.34 422.659c-4.872 4.872-4.631 12.815.482 17.433C133.798 479.813 192.074 504 256 504c136.966 0 247.999-111.033 248-247.998C504.001 119.193 392.354 7.755 255.545 8z"
+                      ></path>
+                    </svg>
+                  </button>
+                  <pdf-zoom-in id="zoomIn"></pdf-zoom-in>
+  
+                  <pdf-page-number id="pageNumber"> </pdf-page-number>
+                </div>
+              </div>
+              <div class="pdf_content">
+                <ngx-extended-pdf-viewer
+                  *ngIf="file_Url"
+                  [src]="file_Url"
+                  [showToolbar]="true"
+                  [showSidebarButton]="false"
+                  [showFindButton]="false"
+                  [showPagingButtons]="false"
+                  [showDrawEditor]="false"
+                  [showTextEditor]="false"
+                  [showZoomButtons]="false"
+                  [showPresentationModeButton]="false"
+                  [showOpenFileButton]="false"
+                  [showPrintButton]="false"
+                  [showDownloadButton]="false"
+                  [showSecondaryToolbarButton]="false"
+                  [showRotateButton]="false"
+                  [showHandToolButton]="false"
+                  [showScrollingButton]="false"
+                  [showSpreadButton]="false"
+                  [showPropertiesButton]="false"
+                  [height]="'100%'"
+                ></ngx-extended-pdf-viewer>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template pTemplate>
+          <div class="col flex align-items-center justify-content-center">
+            <div class="chat container">
+              <div class="chat_nav">
+                <h1>Chat</h1>
+                <div class="chat_control">
+                  <span style="padding-top: 3px">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 1024 1024"
+                      class="icon-button"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M901.84 949.376H69.841v-640h257.6l64.72-62.336-1.664-1.664H69.84c-35.344 0-64 28.656-64 64v640c0 35.344 28.656 64 64 64h832c35.343 0 64-28.656 64-64V448.704l-64 61.088v439.584zm-631.711-256l64.48-.001c44.865-254.496 266.545-448 533.889-448 11.215 0 21.855.096 32.623.176L783.873 362.783c-12.464 12.496-12.464 32.752 0 45.248 6.255 6.256 14.463 9.376 22.656 9.376s16.336-3.12 22.592-9.376l189.024-194L829.12 19.999c-12.464-12.496-32.72-12.496-45.248 0-12.464 12.496-12.464 32.752 0 45.248l116.176 116.16c-10.033-.016-19.968-.048-30.208-.048-303.056 0-553.567 221.952-599.711 512.017z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span
+                    role="img"
+                    aria-label="edit"
+                    tabindex="-1"
+                    class="anticon anticon-edit icon-button"
+                  >
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="edit"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M257.7 752c2 0 4-.2 6-.5L431.9 722c2-.4 3.9-1.3 5.3-2.8l423.9-423.9a9.96 9.96 0 000-14.1L694.9 114.9c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1-7.1 2.9L256.8 538.8c-1.5 1.5-2.4 3.3-2.8 5.3l-29.5 168.2a33.5 33.5 0 009.4 29.8c6.6 6.4 14.9 9.9 23.8 9.9zm67.4-174.4L687.8 215l73.3 73.3-362.7 362.6-88.9 15.7 15.6-89zM880 836H144c-17.7 0-32 14.3-32 32v36c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-36c0-17.7-14.3-32-32-32z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span
+                    role="img"
+                    aria-label="download"
+                    tabindex="-1"
+                    class="anticon anticon-download icon-button"
+                  >
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="download"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M505.7 661a8 8 0 0012.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9h-74.1V168c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v338.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.8zM878 626h-60c-4.4 0-8 3.6-8 8v154H214V634c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v198c0 17.7 14.3 32 32 32h684c17.7 0 32-14.3 32-32V634c0-4.4-3.6-8-8-8z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span
+                    role="img"
+                    aria-label="undo"
+                    tabindex="-1"
+                    class="anticon anticon-undo icon-button"
+                  >
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="undo"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M511.4 124C290.5 124.3 112 303 112 523.9c0 128 60.2 242 153.8 315.2l-37.5 48c-4.1 5.3-.3 13 6.3 12.9l167-.8c5.2 0 9-4.9 7.7-9.9L369.8 727a8 8 0 00-14.1-3L315 776.1c-10.2-8-20-16.7-29.3-26a318.64 318.64 0 01-68.6-101.7C200.4 609 192 567.1 192 523.9s8.4-85.1 25.1-124.5c16.1-38.1 39.2-72.3 68.6-101.7 29.4-29.4 63.6-52.5 101.7-68.6C426.9 212.4 468.8 204 512 204s85.1 8.4 124.5 25.1c38.1 16.1 72.3 39.2 101.7 68.6 29.4 29.4 52.5 63.6 68.6 101.7 16.7 39.4 25.1 81.3 25.1 124.5s-8.4 85.1-25.1 124.5a318.64 318.64 0 01-68.6 101.7c-7.5 7.5-15.3 14.5-23.4 21.2a7.93 7.93 0 00-1.2 11.1l39.4 50.5c2.8 3.5 7.9 4.1 11.4 1.3C854.5 760.8 912 649.1 912 523.9c0-221.1-179.4-400.2-400.6-399.9z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span
+                    role="img"
+                    aria-label="delete"
+                    tabindex="-1"
+                    class="anticon anticon-delete icon-button"
+                  >
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="delete"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="chat-container"*ngIf="file_Url">
+                <div class="chat-messages">
+                  <div class="message">
+                   <p> Weel met! Here's a quick summary o' the PDF file:
+  
+                    We hae a variety o' items in different categories, sic as accessories, fitness gear, an' clothing. The quantities are listed for each item, sae ye can easily see how mony we hae in stock.
+                    
+                     Whit is the total quantity o' items in the PDF file?
+                     Hoo mony different categories o' items are listed?
+                     Whit is the most common category o' items in terms o' quantity?</p>
+                  </div>
+                  <div *ngFor="let message of messages" class="message" [ngClass]="{'sent': message.sentByUser}">
+                    {{ message.text }}
+                  </div>
+                </div>
+                <div class="chat-input">
+                  <input [(ngModel)]="newMessage" placeholder="Type your message..." />
+                  <button (click)="sendMessage()">
+                    <svg viewBox="64 64 896 896" focusable="false" data-icon="send" width="1em" height="1em" fill="currentColor" aria-hidden="true"><defs><style></style></defs>
+                        <path d="M931.4 498.9L94.9 79.5c-3.4-1.7-7.3-2.1-11-1.2a15.99 15.99 0 00-11.7 19.3l86.2 352.2c1.3 5.3 5.2 9.6 10.4 11.3l147.7 50.7-147.6 50.7c-5.2 1.8-9.1 6-10.3 11.3L72.2 926.5c-.9 3.7-.5 7.6 1.2 10.9 3.9 7.9 13.5 11.1 21.5 7.2l836.5-417c3.1-1.5 5.6-4.1 7.2-7.1 3.9-8 .7-17.6-7.2-21.6zM170.8 826.3l50.3-205.6 295.2-101.3c2.3-.8 4.2-2.6 5-5 1.4-4.2-.8-8.7-5-10.2L221.1 403 171 198.2l628 314.9-628.2 313.2z">
+  
+                        </path>
+                      </svg>
+                    
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </ng-template>
+      </p-splitter>
+    </div>
+  </div>
+  
